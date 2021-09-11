@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="title_games">O\'yinlar</string>
+    <string name="title_apps">Dasturlar</string>
+    <string name="title_movies">Kinolar</string>
+    <string name="title_books">Kitoblar</string>
+
+    <string name="app_language_en">Inglizcha</string>
+    <string name="app_language_ru">Ruscha</string>
+    <string name="app_language_uz">O\'zbekcha</string>
+
+    <string name="en">en</string>
+    <string name="ru">ru</string>
+    <string name="uz">uz</string>
+
+    <string name="title_change_language">Tilni o\'zgartirish</string>
+    <string name="title_change_theme">Temani o\'zgartirish</string>
+
+    <string name="hint_search_games">O\'yinlar uchun qidiruv</string>
+    <string name="hint_search_apps">Dasturlar uchun qidiruv</string>
+    <string name="hint_search_movies">Kinolar uchun qidiruv</string>
+    <string name="hint_search_books">Kitoblar uchun qidiruv</string>
+
+    <string name="settings">Sozlamalar</string>
+
+    <string name="text_night_mode">Tun rejimi</string>
+    <string name="text_light_mode">Kun rejimi</string>
+    <string name="text_red_mode">Qizil rejimi</string>
+
+    <string name="title_for_you">Siz uchun</string>
+    <string name="title_top_charts">Xit paradlar</string>
+    <string name="title_children">Bolalar</string>
+    <string name="title_premium">Premiumlar</string>
+    <string name="title_categories">Kategoriyalar</string>
+    <string name="title_editors_choice">Tahrirlovchilar tanlovi</string>
+</resources>

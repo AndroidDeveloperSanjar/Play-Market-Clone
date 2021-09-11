@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_games"
+        android:icon="@drawable/ic_games"
+        android:visible="true"
+        android:title="@string/title_games" />
+
+    <item
+        android:id="@+id/navigation_apps"
+        android:icon="@drawable/ic_apps"
+        android:visible="true"
+        android:title="@string/title_apps" />
+
+    <item
+        android:id="@+id/navigation_movies"
+        android:icon="@drawable/ic_movies"
+        android:visible="true"
+        android:title="@string/title_movies" />
+
+    <item
+        android:id="@+id/navigation_books"
+        android:icon="@drawable/ic_books"
+        android:visible="true"
+        android:title="@string/title_books" />
+
+
+</menu>

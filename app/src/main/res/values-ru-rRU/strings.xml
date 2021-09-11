@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="title_games">Игры</string>
+    <string name="title_apps">Программы</string>
+    <string name="title_movies">Фильмы</string>
+    <string name="title_books">Книги</string>
+
+    <string name="app_language_en">Английский</string>
+    <string name="app_language_ru">Русский</string>
+    <string name="app_language_uz">Узбекский</string>
+
+    <string name="en">en</string>
+    <string name="ru">ru</string>
+    <string name="uz">uz</string>
+
+    <string name="title_change_language">Изменение языка</string>
+    <string name="title_change_theme">Смени тему</string>
+
+    <string name="hint_search_games">Искать игры</string>
+    <string name="hint_search_apps">Искать приложения</string>
+    <string name="hint_search_movies">Искать фильмы</string>
+    <string name="hint_search_books">Искать книги</string>
+
+    <string name="settings">Настройки</string>
+
+    <string name="text_night_mode">Ночной режим</string>
+    <string name="text_light_mode">Легкий режим</string>
+    <string name="text_red_mode">Красный режим</string>
+
+    <string name="title_for_you">Для тебя</string>
+    <string name="title_top_charts">Хит парад</string>
+    <string name="title_children">Дети</string>
+    <string name="title_premium">Премиум</string>
+    <string name="title_categories">Категории</string>
+    <string name="title_editors_choice">Выбор редактора</string>
+</resources>

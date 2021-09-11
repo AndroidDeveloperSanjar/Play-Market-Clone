@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/window_background"
+    tools:context=".ui.settings.SettingsFragment">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_back"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:padding="10dp"
+        app:srcCompat="@drawable/ic_back"
+        app:tint="?attr/text_color" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="20dp"
+        android:gravity="center"
+        android:text="@string/settings"
+        android:textColor="?attr/text_color"
+        android:textSize="21sp"
+        android:textStyle="bold"
+        app:fontFamily="@font/nexa_regular" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/iv_back">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_title_change_language"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/title_change_language"
+            android:textColor="?attr/text_color"
+            android:textSize="19sp"
+            app:fontFamily="@font/nexa_regular"
+            app:layout_constraintStart_toEndOf="@+id/iv_next"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_language"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+            android:textColor="?attr/text_color"
+            app:fontFamily="@font/nexa_regular"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_title_change_language"
+            tools:text="English" />
+
+        <View
+            android:id="@+id/view_change_language"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="-10dp"
+            android:background="@drawable/ripple_effect_settings"
+            android:clickable="true"
+            android:focusable="true"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_language"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintBottom_toBottomOf="@+id/view_change_language"
+            app:layout_constraintEnd_toEndOf="@+id/view_change_language"
+            app:layout_constraintTop_toTopOf="@+id/view_change_language"
+            app:srcCompat="@drawable/ic_next"
+            app:tint="?attr/text_color" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_title_change_theme"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/title_change_theme"
+            android:textColor="?attr/text_color"
+            android:textSize="19sp"
+            app:fontFamily="@font/nexa_regular"
+            app:layout_constraintStart_toEndOf="@+id/iv_next"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view_change_language" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_theme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+            android:textColor="?attr/text_color"
+            app:fontFamily="@font/nexa_regular"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_title_change_theme"
+            tools:text="Dark Mode" />
+
+        <View
+            android:id="@+id/view_change_theme"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="-10dp"
+            android:background="@drawable/ripple_effect_settings"
+            android:clickable="true"
+            android:focusable="true"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_theme"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/view_change_language" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_next_theme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintBottom_toBottomOf="@+id/view_change_theme"
+            app:layout_constraintEnd_toEndOf="@+id/view_change_theme"
+            app:layout_constraintTop_toTopOf="@+id/view_change_theme"
+            app:srcCompat="@drawable/ic_next"
+            app:tint="?attr/text_color" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</RelativeLayout>

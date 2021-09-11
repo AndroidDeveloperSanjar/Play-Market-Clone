@@ -1,0 +1,49 @@
+package uz.androbeck.playmarketclone.core.language
+
+import android.annotation.SuppressLint
+import android.content.Context
+import android.content.res.Configuration
+import android.os.Build
+import android.os.LocaleList
+import uz.androbeck.playmarketclone.util.getLocaleCompat
+import uz.androbeck.playmarketclone.util.isAtLeastSdkVersion
+import java.util.*
+
+internal class UpdateLocaleDelegate {
+
+    internal fun applyLocale(context: Context, locale: Locale) {
+        updateResources(context, locale)
+        val appContext = context.applicationContext
+        if (appContext !== context) {
+            updateResources(appContext, locale)
+        }
+    }
+
+    @Suppress("DEPRECATION")
+    private fun updateResources(context: Context, locale: Locale) {
+        Locale.setDefault(locale)
+
+        val res = context.resources
+        val current = res.configuration.getLocaleCompat()
+
+        if (current == locale) return
+
+        val config = Configuration(res.configuration)
+        when {
+            isAtLeastSdkVersion(Build.VERSION_CODES.N) -> setLocaleForApi24(config, locale)
+            isAtLeastSdkVersion(Build.VERSION_CODES.JELLY_BEAN_MR1) -> config.setLocale(locale)
+            else -> config.locale = locale
+        }
+        res.updateConfiguration(config, res.displayMetrics)
+    }
+
+    @SuppressLint("NewApi")
+    @Suppress("SpreadOperator")
+    private fun setLocaleForApi24(config: Configuration, locale: Locale) {
+        val set = linkedSetOf(locale)
+        val defaultLocales = LocaleList.getDefault()
+        val all = List<Locale>(defaultLocales.size()) { defaultLocales[it] }
+        set.addAll(all)
+        config.setLocales(LocaleList(*set.toTypedArray()))
+    }
+}

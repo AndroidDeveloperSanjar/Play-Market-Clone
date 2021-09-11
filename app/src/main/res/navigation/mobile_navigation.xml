@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_games">
+
+    <fragment
+        android:id="@+id/navigation_games"
+        android:name="uz.androbeck.playmarketclone.ui.games.GamesFragment"
+        android:label="@string/title_games"
+        tools:layout="@layout/fragment_games" />
+
+    <fragment
+        android:id="@+id/navigation_apps"
+        android:name="uz.androbeck.playmarketclone.ui.apps.AppsFragment"
+        android:label="@string/title_apps"
+        tools:layout="@layout/fragment_apps" />
+
+    <fragment
+        android:id="@+id/navigation_movies"
+        android:name="uz.androbeck.playmarketclone.ui.movies.MoviesFragment"
+        android:label="@string/title_movies"
+        tools:layout="@layout/fragment_movies" />
+    <fragment
+        android:id="@+id/navigation_books"
+        android:name="uz.androbeck.playmarketclone.ui.books.BooksFragment"
+        android:label="@string/title_books"
+        tools:layout="@layout/fragment_books" />
+    <fragment
+        android:id="@+id/navigation_settings"
+        android:name="uz.androbeck.playmarketclone.ui.settings.SettingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" />
+
+</navigation>
