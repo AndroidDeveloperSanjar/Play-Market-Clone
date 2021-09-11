@@ -9,4 +9,8 @@ class AppRepositoryImpl : AppRepository {
     override fun fragments() = flow {
         emit(Data.fragments)
     }
+
+    override fun data() = flow {
+        emit(Data.uiData)
+    }
 }

@@ -47,36 +47,29 @@ class UIAdapter : ListAdapter<UIModel, RecyclerView.ViewHolder>(COMPARATOR) {
 
     override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
         when (holder) {
-            is TitleViewHolder -> holder.bind()
-            is HorizontalContentsViewHolder -> holder.bind()
+            is TitleViewHolder -> holder.bind(currentList[position])
+            is HorizontalContentsViewHolder -> holder.bind(currentList[position])
         }
     }
 
     inner class TitleViewHolder(
         private val viewBinding: ItemTitleBinding
     ) : RecyclerView.ViewHolder(viewBinding.root) {
-        fun bind() {
-            currentList.find { it.viewType == 0 }?.verticalData?.forEach {
-                viewBinding.tvTitle.text = it.title
-            }
+        fun bind(item: UIModel) {
+            viewBinding.tvTitle.text = item.title
         }
     }
 
     inner class HorizontalContentsViewHolder(
         private val viewBinding: ItemHorizontalRvBinding
     ) : RecyclerView.ViewHolder(viewBinding.root) {
-        fun bind() {
-            println(currentList)
+        fun bind(item: UIModel) {
             with(viewBinding) {
                 val mAdapter = HorizontalAdapter()
                 recyclerViewHorizontal.layoutManager =
                     LinearLayoutManager(root.context, RecyclerView.HORIZONTAL, false)
                 recyclerViewHorizontal.adapter = mAdapter
-                currentList.find { it.viewType == 1 }?.verticalData?.forEach {
-                    println(it.horizontalData)
-                    mAdapter.submitList(it.horizontalData)
-                }
-                //mAdapter.submitList(currentList[bindingAdapterPosition].verticalData[bindingAdapterPosition].horizontalData)
+                mAdapter.submitList(item.data)
             }
         }
     }

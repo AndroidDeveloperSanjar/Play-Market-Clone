@@ -1,8 +1,10 @@
 package uz.androbeck.playmarketclone.ui
 
 import android.view.View
+import androidx.appcompat.widget.AppCompatImageView
 import androidx.appcompat.widget.AppCompatTextView
 import androidx.recyclerview.widget.DiffUtil
+import coil.load
 import uz.androbeck.playmarketclone.R
 import uz.androbeck.playmarketclone.core.base.BaseListAdapter
 import uz.androbeck.playmarketclone.data.model.UIHorizontalData
@@ -41,6 +43,7 @@ class HorizontalAdapter : BaseListAdapter<UIHorizontalData>(
             findViewById<AppCompatTextView>(R.id.tv_content_name).text = item.contentName
             findViewById<AppCompatTextView>(R.id.tv_content_star).text =
                 "${item.contentStar} * Free"
+            findViewById<AppCompatImageView>(R.id.iv_content).load(item.imageUrl)
         }
     }
 }

@@ -2,12 +2,8 @@ package uz.androbeck.playmarketclone.data.model
 
 data class UIModel(
     val viewType: Int,
-    val verticalData: List<UIVerticalData>
-)
-
-data class UIVerticalData(
     val title: String,
-    val horizontalData: List<UIHorizontalData>
+    val data: List<UIHorizontalData>
 )
 
 data class UIHorizontalData(

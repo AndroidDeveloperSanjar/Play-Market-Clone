@@ -5,18 +5,18 @@ import android.os.Build
 import android.os.Bundle
 import android.util.TypedValue
 import android.view.*
+import android.view.animation.Animation
+import android.view.animation.AnimationUtils
 import androidx.activity.addCallback
 import androidx.annotation.CallSuper
 import androidx.annotation.ColorInt
 import androidx.appcompat.widget.Toolbar
-import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import uz.androbeck.playmarketclone.PlayMarketCloneApp
 import uz.androbeck.playmarketclone.R
 import uz.androbeck.playmarketclone.core.cache.preferences.PreferencesManager
 import uz.androbeck.playmarketclone.util.appCompatActivity
-import uz.androbeck.playmarketclone.util.toast
 
 abstract class BaseFragment(
     private val
@@ -50,6 +50,14 @@ abstract class BaseFragment(
         val rootView = mInflater.inflate(contentLayoutId, null, false)
 
         return rootView
+    }
+
+    override fun onCreateAnimation(transit: Int, enter: Boolean, nextAnim: Int): Animation? {
+        return if (enter) {
+            AnimationUtils.loadAnimation(context, android.R.anim.fade_in)
+        } else {
+            AnimationUtils.loadAnimation(context, android.R.anim.fade_out)
+        }
     }
 
     @CallSuper

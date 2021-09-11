@@ -60,9 +60,4 @@ dependencies {
 
     //Coil
     implementation("io.coil-kt:coil:1.3.2")
-
-    //Locale
-    implementation 'dev.b3nedikt.restring:restring:5.1.4'
-    implementation 'dev.b3nedikt.viewpump:viewpump:4.0.7'
-    implementation 'dev.b3nedikt.reword:reword:4.0.1'
 }
