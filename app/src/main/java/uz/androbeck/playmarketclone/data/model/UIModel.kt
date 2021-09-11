@@ -6,7 +6,7 @@ data class UIModel(
 )
 
 data class UIVerticalData(
-    val titles: List<String>,
+    val title: String,
     val horizontalData: List<UIHorizontalData>
 )
 

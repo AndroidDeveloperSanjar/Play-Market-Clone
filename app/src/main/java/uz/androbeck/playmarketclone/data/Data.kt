@@ -32,11 +32,7 @@ object Data {
             viewType = 0,
             verticalData = listOf(
                 UIVerticalData(
-                    titles = listOf(
-                        "Sample 1",
-                        "Sample 2",
-                        "Sample 3",
-                    ),
+                    title = "Sample 1",
                     horizontalData = emptyList()
                 )
             )
@@ -45,7 +41,7 @@ object Data {
             viewType = 1,
             verticalData = listOf(
                 UIVerticalData(
-                    titles = emptyList(),
+                    title = "",
                     horizontalData = listOf(
                         UIHorizontalData(
                             imageUrl = "",
@@ -61,6 +57,242 @@ object Data {
                             imageUrl = "",
                             contentName = "Name 3",
                             contentStar = 3
+                        ),
+                        UIHorizontalData(
+                            imageUrl = "",
+                            contentName = "Name 4",
+                            contentStar = 4
+                        ),
+                        UIHorizontalData(
+                            imageUrl = "",
+                            contentName = "Name 5",
+                            contentStar = 5
+                        ),
+                        UIHorizontalData(
+                            imageUrl = "",
+                            contentName = "Name 6",
+                            contentStar = 6
+                        ),
+                        UIHorizontalData(
+                            imageUrl = "",
+                            contentName = "Name 7",
+                            contentStar = 7
+                        )
+                    )
+                )
+            )
+        ),
+        UIModel(
+            viewType = 0,
+            verticalData = listOf(
+                UIVerticalData(
+                    title = "Sample 2",
+                    horizontalData = emptyList()
+                )
+            )
+        ),
+        UIModel(
+            viewType = 1,
+            verticalData = listOf(
+                UIVerticalData(
+                    title = "",
+                    horizontalData = listOf(
+                        UIHorizontalData(
+                            imageUrl = "",
+                            contentName = "Name 1",
+                            contentStar = 1
+                        ),
+                        UIHorizontalData(
+                            imageUrl = "",
+                            contentName = "Name 2",
+                            contentStar = 2
+                        ),
+                        UIHorizontalData(
+                            imageUrl = "",
+                            contentName = "Name 3",
+                            contentStar = 3
+                        ),
+                        UIHorizontalData(
+                            imageUrl = "",
+                            contentName = "Name 4",
+                            contentStar = 4
+                        ),
+                        UIHorizontalData(
+                            imageUrl = "",
+                            contentName = "Name 5",
+                            contentStar = 5
+                        ),
+                        UIHorizontalData(
+                            imageUrl = "",
+                            contentName = "Name 6",
+                            contentStar = 6
+                        ),
+                        UIHorizontalData(
+                            imageUrl = "",
+                            contentName = "Name 7",
+                            contentStar = 7
+                        )
+                    )
+                )
+            )
+        ),
+        UIModel(
+            viewType = 0,
+            verticalData = listOf(
+                UIVerticalData(
+                    title = "Sample 2",
+                    horizontalData = emptyList()
+                )
+            )
+        ),
+        UIModel(
+            viewType = 1,
+            verticalData = listOf(
+                UIVerticalData(
+                    title = "",
+                    horizontalData = listOf(
+                        UIHorizontalData(
+                            imageUrl = "",
+                            contentName = "Name 1",
+                            contentStar = 1
+                        ),
+                        UIHorizontalData(
+                            imageUrl = "",
+                            contentName = "Name 2",
+                            contentStar = 2
+                        ),
+                        UIHorizontalData(
+                            imageUrl = "",
+                            contentName = "Name 3",
+                            contentStar = 3
+                        ),
+                        UIHorizontalData(
+                            imageUrl = "",
+                            contentName = "Name 4",
+                            contentStar = 4
+                        ),
+                        UIHorizontalData(
+                            imageUrl = "",
+                            contentName = "Name 5",
+                            contentStar = 5
+                        ),
+                        UIHorizontalData(
+                            imageUrl = "",
+                            contentName = "Name 6",
+                            contentStar = 6
+                        ),
+                        UIHorizontalData(
+                            imageUrl = "",
+                            contentName = "Name 7",
+                            contentStar = 7
+                        )
+                    )
+                )
+            )
+        ),
+        UIModel(
+            viewType = 0,
+            verticalData = listOf(
+                UIVerticalData(
+                    title = "Sample 2",
+                    horizontalData = emptyList()
+                )
+            )
+        ),
+        UIModel(
+            viewType = 1,
+            verticalData = listOf(
+                UIVerticalData(
+                    title = "",
+                    horizontalData = listOf(
+                        UIHorizontalData(
+                            imageUrl = "",
+                            contentName = "Name 1",
+                            contentStar = 1
+                        ),
+                        UIHorizontalData(
+                            imageUrl = "",
+                            contentName = "Name 2",
+                            contentStar = 2
+                        ),
+                        UIHorizontalData(
+                            imageUrl = "",
+                            contentName = "Name 3",
+                            contentStar = 3
+                        ),
+                        UIHorizontalData(
+                            imageUrl = "",
+                            contentName = "Name 4",
+                            contentStar = 4
+                        ),
+                        UIHorizontalData(
+                            imageUrl = "",
+                            contentName = "Name 5",
+                            contentStar = 5
+                        ),
+                        UIHorizontalData(
+                            imageUrl = "",
+                            contentName = "Name 6",
+                            contentStar = 6
+                        ),
+                        UIHorizontalData(
+                            imageUrl = "",
+                            contentName = "Name 7",
+                            contentStar = 7
+                        )
+                    )
+                )
+            )
+        ),
+        UIModel(
+            viewType = 0,
+            verticalData = listOf(
+                UIVerticalData(
+                    title = "Sample 2",
+                    horizontalData = emptyList()
+                )
+            )
+        ),
+        UIModel(
+            viewType = 1,
+            verticalData = listOf(
+                UIVerticalData(
+                    title = "",
+                    horizontalData = listOf(
+                        UIHorizontalData(
+                            imageUrl = "",
+                            contentName = "Name 1",
+                            contentStar = 1
+                        ),
+                        UIHorizontalData(
+                            imageUrl = "",
+                            contentName = "Name 2",
+                            contentStar = 2
+                        ),
+                        UIHorizontalData(
+                            imageUrl = "",
+                            contentName = "Name 3",
+                            contentStar = 3
+                        ),
+                        UIHorizontalData(
+                            imageUrl = "",
+                            contentName = "Name 4",
+                            contentStar = 4
+                        ),
+                        UIHorizontalData(
+                            imageUrl = "",
+                            contentName = "Name 5",
+                            contentStar = 5
+                        ),
+                        UIHorizontalData(
+                            imageUrl = "",
+                            contentName = "Name 6",
+                            contentStar = 6
+                        ),
+                        UIHorizontalData(
+                            imageUrl = "",
+                            contentName = "Name 7",
+                            contentStar = 7
                         )
                     )
                 )

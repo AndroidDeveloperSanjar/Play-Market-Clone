@@ -56,8 +56,9 @@ class UIAdapter : ListAdapter<UIModel, RecyclerView.ViewHolder>(COMPARATOR) {
         private val viewBinding: ItemTitleBinding
     ) : RecyclerView.ViewHolder(viewBinding.root) {
         fun bind() {
-            viewBinding.tvTitle.text =
-                currentList[bindingAdapterPosition].verticalData[bindingAdapterPosition].titles[bindingAdapterPosition]
+            currentList.find { it.viewType == 0 }?.verticalData?.forEach {
+                viewBinding.tvTitle.text = it.title
+            }
         }
     }
 
